@@ -1,5 +1,4 @@
-import SimpleButton from "./SimpleButton";
-
+'use client';
 const ServiceHero = () => {
   return (
     <div
@@ -18,9 +17,15 @@ const ServiceHero = () => {
         <div
           data-aos="fade-up"
           data-aos-delay="400"
-          className="flex items-end pt-16` justify-center"
+          className="flex items-end pt-20 justify-center"
         >
-          <SimpleButton link="/" text="Discover Our Services"/>
+          <a
+            href="#services"
+            type="submit"
+            className=" p-2 bg-blue-500 text-white font-bold rounded-lg w-fit hover:bg-blue-700"
+          >
+            Discoer Our Services
+          </a>
         </div>
         <img
           src="/logoDark.png"

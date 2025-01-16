@@ -24,12 +24,6 @@ export default function Home() {
         subtitle1=""
         subtitle2="Anything we should know before calling?"
       />
-      <Form
-        title1="Unique Needs?"
-        title2="We Have Tailored Solution!"
-        subtitle1="Custom plans are available for clients who request tailored solutions for unique needs"
-        subtitle2="Anything we should know before calling?"
-      />
     </div>
   );
 }
