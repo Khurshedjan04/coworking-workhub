@@ -5,11 +5,12 @@ import { useEffect } from "react";
 import AOS from "aos";
 import HeroSection from "./components/HomeHero";
 import HomeOffer from "./components/HomeOffer";
+import HomeArticle from "./components/HomeArticle";
 
 export default function Home() {
   useEffect(() => {
     AOS.init({
-      duration: 2000,
+      duration: 1000,
       once: true,
     });
   }, []);
@@ -17,6 +18,7 @@ export default function Home() {
     <div className="w-full h-full flex flex-col gap-24">
       <HeroSection />
       <HomeOffer/>
+      <HomeArticle />
     </div>
   );
 }
