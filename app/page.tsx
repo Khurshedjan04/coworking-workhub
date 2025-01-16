@@ -7,6 +7,7 @@ import HeroSection from "./components/HomeHero";
 import HomeOffer from "./components/HomeOffer";
 import HomeArticle from "./components/HomeArticle";
 import Packages from "./components/Packages";
+import Form from "./components/Form";
 
 export default function Home() {
   useEffect(() => {
@@ -21,6 +22,7 @@ export default function Home() {
       <HomeOffer/>
       <HomeArticle />
       <Packages/>
+      <Form title1 = "Unique Needs?" title2 = "We Have Tailored Solution!" subtitle1 = "Custom plans are available for clients who request tailored solutions for unique needs" subtitle2 = "Anything we should know before calling?"/>
     </div>
   );
 }
