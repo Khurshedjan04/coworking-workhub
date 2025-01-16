@@ -6,6 +6,7 @@ import AOS from "aos";
 import HeroSection from "./components/HomeHero";
 import HomeOffer from "./components/HomeOffer";
 import HomeArticle from "./components/HomeArticle";
+import Packages from "./components/Packages";
 
 export default function Home() {
   useEffect(() => {
@@ -19,6 +20,7 @@ export default function Home() {
       <HeroSection />
       <HomeOffer/>
       <HomeArticle />
+      <Packages/>
     </div>
   );
 }
