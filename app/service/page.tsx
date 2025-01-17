@@ -6,6 +6,7 @@ import AOS from "aos";
 import Form from "../components/Form";
 import ServiceMain from "../components/ServiceMain";
 import ServiceHero from "../components/ServiceHero";
+import Navigation from "../Navigation";
 
 export default function Home() {
   useEffect(() => {
@@ -15,6 +16,9 @@ export default function Home() {
     });
   }, []);
   return (
+    <>
+    <Navigation />
+
     <div className="w-full h-full flex flex-col gap-24">
       <ServiceHero />
       <ServiceMain />
@@ -25,5 +29,6 @@ export default function Home() {
         subtitle2="Anything we should know before calling?"
       />
     </div>
+    </>
   );
 }

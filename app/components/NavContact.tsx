@@ -1,12 +1,12 @@
 "use client";
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import SimpleButton from "./components/SimpleButton";
-import { navLinks } from "./constants";
+import SimpleButton from "../components/SimpleButton";
+import { navLinks } from "../constants";
 import MenuIcon from "@mui/icons-material/Menu";
 import Image from "next/image";
 
-const Navigation = () => {
+const NavContact = () => {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -26,9 +26,9 @@ const Navigation = () => {
 
   return (
     <div
-      className={` ${
-        scrolled ? "text-cosumDarkBlue" : "text-white"
-      } w-full max--w-2xl h-20 z-10 fixed top-0 `}
+      className={`
+      text-cosumDarkBlue
+       w-full max--w-2xl h-20 z-[100] fixed top-0 `}
       data-aos="fade-down"
     >
       <div className="block md:hidden text-5xl absolute top-3 right-6">
@@ -43,7 +43,7 @@ const Navigation = () => {
           <Link href="/">
             <Image
               className="transition-all w-44 h-fit"
-              src={`${scrolled ? "/logoDark.webp" : "/logo.webp"}`}
+              src="/logoDark.webp"
               alt="Company Logo"
               width={192}
               height={60}
@@ -61,7 +61,10 @@ const Navigation = () => {
                 `}
                 >
                   <Link href={link.link}>
-                    <h1 className="text-2xl lg:text-lg sm:text-2xl">
+                    <h1
+                      className="text-2xl       text-cosumDarkBlue
+ lg:text-lg sm:text-2xl"
+                    >
                       {link.title}
                     </h1>
                   </Link>
@@ -71,16 +74,15 @@ const Navigation = () => {
           </div>
         </div>
         <div className="hidden md:flex gap-8">
-          <div className="w-fit xl:flex hidden gap-8 items-center">
+          <div className="w-fit xl:flex hidden gap-8 text-cosumDarkBlue items-center">
             <Link href="/">+998 90 452 49 46</Link>
           </div>
 
-            <SimpleButton text="Leave Request" link="/request" />
-   
+          <SimpleButton text="Leave Request" link="/request" />
         </div>
       </div>
     </div>
   );
 };
 
-export default Navigation;
+export default NavContact;

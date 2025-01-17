@@ -31,7 +31,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <div className="max-w-screen-2xl w-full mx-auto min-h-screen flex flex-col justify-between pb-8 relative">
-          <Navigation />
+          
           {children}
           <Footer />
         </div>

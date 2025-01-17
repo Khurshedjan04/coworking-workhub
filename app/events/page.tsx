@@ -5,6 +5,7 @@ import { useEffect } from "react";
 import AOS from "aos";
 import EventsMain from "../components/EventsMain";
 import Form from "../components/Form";
+import Navigation from "../Navigation";
 
 export default function Home() {
   useEffect(() => {
@@ -14,6 +15,8 @@ export default function Home() {
     });
   }, []);
   return (
+    <>
+    <Navigation/>
     <div className="w-full h-full flex flex-col">
       <EventsMain />
       <Form
@@ -23,5 +26,6 @@ export default function Home() {
         subtitle2="The Event You are Interested in"
       />
     </div>
+    </>
   );
 }
