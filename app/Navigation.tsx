@@ -4,6 +4,7 @@ import Link from "next/link";
 import SimpleButton from "./components/SimpleButton";
 import { navLinks } from "./constants";
 import MenuIcon from "@mui/icons-material/Menu";
+import Image from "next/image";
 
 const Navigation = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -40,10 +41,12 @@ const Navigation = () => {
       >
         <div className="w-fit flex gap-8 items-center">
           <Link href="/">
-            <img
+            <Image
               className="transition-all w-44 h-fit"
-              src={` ${scrolled ? "/logoDark.png" : "/logo.png"}`}
+              src={`${scrolled ? "/logoDark.png" : "/logo.png"}`}
               alt="Company Logo"
+              width={192}
+              height={60}
             />
           </Link>
           <div className="flex flex-col items-center sm:flex-row gap-8 font-bold">
