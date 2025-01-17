@@ -44,7 +44,7 @@ const HeroSection = () => {
             </form>
           </div>
           <Image
-            src="/logo.webp"
+            src="/logoDark.webp"
             alt="WorkHub Logo"
             className="absolute bottom-4 right-4 w-48 md:w-60"
             layout="intrinsic"

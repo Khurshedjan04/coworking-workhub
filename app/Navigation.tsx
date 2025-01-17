@@ -43,7 +43,7 @@ const Navigation = () => {
           <Link href="/">
             <Image
               className="transition-all w-44 h-fit"
-              src={`${scrolled ? "/logoDark.png" : "/logo.png"}`}
+              src={`${scrolled ? "/logoDark.webp" : "/logo.webp"}`}
               alt="Company Logo"
               width={192}
               height={60}
