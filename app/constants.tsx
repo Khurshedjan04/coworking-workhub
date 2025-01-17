@@ -68,22 +68,22 @@ interface ConditionHome {
 
 const conditionsHome: ConditionHome[] = [
   {
-    url: "/creative.png",
+    url: "/creative.webp",
     alt: "creative",
     title: "Flexible Workspace Options",
   },
   {
-    url: "/city.png",
+    url: "/city.webp",
     alt: "city",
     title: "Central Location",
   },
   {
-    url: "/office.png",
+    url: "/office.webp",
     alt: "office",
     title: "Collaborative Environment",
   },
   {
-    url: "/comfort.png",
+    url: "/comfort.webp",
     alt: "cozy",
     title: "Premium Amenities",
   },
@@ -103,14 +103,14 @@ const articlessHome: ArticleHome[] = [
       "Whether you prefer a flexible hot desk or a dedicated space just for you, WorkHub Central offers a variety of desk options to fit your work style. Our ergonomic and well-designed desks are perfect for individuals looking for a productive environment in a collaborative setting.",
   },
   {
-    url: "/co2.jpeg",
+    url: "/co2.webp",
     alt: "room",
     title: "Private Offices",
     article:
       "Need more privacy? Our private offices are ideal for small teams or individuals who need a quiet space to focus. With personalized setups and secure access, these offices provide the perfect blend of comfort and professionalism.",
   },
   {
-    url: "/co3.jpg",
+    url: "/co3.webp",
     alt: "office",
     title: "Quiet Areas and Brainstorming Zones",
     article:
@@ -186,12 +186,12 @@ const services: Services[] = [
   {
     title: "WorkSpace Options",
     article: "Flexible workspaces tailored for productivity and comfort.",
-    url: "/co4.jpg",
+    url: "/co4.webp",
   },
   {
     title: "Meeting Rooms",
     article: "Professional meeting rooms for seamless collaboration.",
-    url: "/co6.jpeg",
+    url: "/co6.webp",
   },
   {
     title: "Review Forums",
@@ -201,27 +201,27 @@ const services: Services[] = [
   {
     title: "Community Perks",
     article: "Exclusive perks that enrich your co-working experience.",
-    url: "/co8.jpg",
+    url: "/co8.webp",
   },
   {
     title: "High Speed Wi-Fi",
     article: "Blazing-fast Wi-Fi to keep you connected always.",
-    url: "/co9.jpeg",
+    url: "/co9.webp",
   },
   {
     title: "Coffee/Tea & Snacks",
     article: "Complimentary refreshments to fuel your day.",
-    url: "/co10.jpg",
+    url: "/co10.webp",
   },
   {
     title: "Printing / Scanning",
     article: "Quick and easy access to printing and scanning.",
-    url: "/co11.jpg",
+    url: "/co11.webp",
   },
   {
     title: "Virtual Office",
     article: "Establish a prestigious business address virtually.",
-    url: "/co12.jpg",
+    url: "/co12.webp",
   },
 ];
 interface Events {
@@ -233,22 +233,22 @@ const events: Events[] = [
   {
     title: "Product Launches",
     article: "Discover innovative products and enjoy exclusive previews at our exciting launch events.",
-    url: "/co14.jpg",
+    url: "/co14.webp",
   },
   {
     title: "Hackathon",
     article: "Join us for a fast-paced hackathon where you can build creative solutions in just 48 hours.",
-    url: "/co13.jpg",
+    url: "/co13.webp",
   },
   {
     title: "Networking",
     article: "Connect with industry leaders and like-minded professionals to open doors to new opportunities.",
-    url: "/ko13.jpg",
+    url: "/ko13.webp",
   },
   {
     title: "Workshop",
     article: "Sharpen your skills in hands-on sessions covering everything from coding to design.",
-    url: "/co15.jpg",
+    url: "/co15.webp",
   },
   {
     title: "Startup Pitch Night",

@@ -76,7 +76,7 @@ const EventsMain = () => {
                     <div className="p-4 text-center flex items-center flex-col gap-5">
                       <div className="w-[120%] h-full absolute top-0 left-0 rounded-[1.25rem] overflow-hidden -z-10">
                         <video
-                          src="/video.mp4"
+                          src="/video1.mp4"
                           autoPlay
                           loop
                           muted

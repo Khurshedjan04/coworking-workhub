@@ -5,7 +5,7 @@ const HeroSection = () => {
       <div
         data-aos="fade-in"
         className="relative w-full h-[75vh] bg-cover bg-center"
-        style={{ backgroundImage: 'url("/hero.jpg")' }}
+        style={{ backgroundImage: 'url("/hero.webp")' }}
       >
         <div className="absolute inset-0 bg-black bg-opacity-50"></div>
         <div className="relative z-10 flex flex-col justify-center h-full text-white text-center px-10 sm:px-24 md:px-36">
@@ -44,7 +44,7 @@ const HeroSection = () => {
             </form>
           </div>
           <Image
-            src="/logoDark.png"
+            src="/logo.webp"
             alt="WorkHub Logo"
             className="absolute bottom-4 right-4 w-48 md:w-60"
             layout="intrinsic"
