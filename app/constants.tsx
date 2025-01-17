@@ -1,5 +1,3 @@
-import { Interface } from "readline";
-
 interface NavLink {
   title: string;
   link: string;
@@ -16,7 +14,7 @@ const navLinks: NavLink[] = [
   },
   {
     title: "Events",
-    link: "/",
+    link: "/events",
   },
   {
     title: "Contact",
@@ -185,46 +183,88 @@ interface Services {
   url: string;
 }
 const services: Services[] = [
-    {
-      title: "WorkSpace Options",
-      article: "Flexible workspaces tailored for productivity and comfort.",
-      url: "/co4.jpg",
-    },
-    {
-      title: "Meeting Rooms",
-      article: "Professional meeting rooms for seamless collaboration.",
-      url: "/co6.jpeg",
-    },
-    {
-      title: "Review Forums",
-      article: "Engage in vibrant discussions and valuable feedback.",
-      url: "/co7.webp",
-    },
-    {
-      title: "Community Perks",
-      article: "Exclusive perks that enrich your co-working experience.",
-      url: "/co8.jpg",
-    },
-    {
-      title: "High Speed Wi-Fi",
-      article: "Blazing-fast Wi-Fi to keep you connected always.",
-      url: "/co9.jpeg",
-    },
-    {
-      title: "Coffee/Tea & Snacks",
-      article: "Complimentary refreshments to fuel your day.",
-      url: "/co10.jpg",
-    },
-    {
-      title: "Printing / Scanning",
-      article: "Quick and easy access to printing and scanning.",
-      url: "/co11.jpg",
-    },
-    {
-      title: "Virtual Office",
-      article: "Establish a prestigious business address virtually.",
-      url: "/co12.jpg",
-    },
-  ];
-  
-export { navLinks, iconsHome, conditionsHome, articlessHome, values, packages, services };
+  {
+    title: "WorkSpace Options",
+    article: "Flexible workspaces tailored for productivity and comfort.",
+    url: "/co4.jpg",
+  },
+  {
+    title: "Meeting Rooms",
+    article: "Professional meeting rooms for seamless collaboration.",
+    url: "/co6.jpeg",
+  },
+  {
+    title: "Review Forums",
+    article: "Engage in vibrant discussions and valuable feedback.",
+    url: "/co7.webp",
+  },
+  {
+    title: "Community Perks",
+    article: "Exclusive perks that enrich your co-working experience.",
+    url: "/co8.jpg",
+  },
+  {
+    title: "High Speed Wi-Fi",
+    article: "Blazing-fast Wi-Fi to keep you connected always.",
+    url: "/co9.jpeg",
+  },
+  {
+    title: "Coffee/Tea & Snacks",
+    article: "Complimentary refreshments to fuel your day.",
+    url: "/co10.jpg",
+  },
+  {
+    title: "Printing / Scanning",
+    article: "Quick and easy access to printing and scanning.",
+    url: "/co11.jpg",
+  },
+  {
+    title: "Virtual Office",
+    article: "Establish a prestigious business address virtually.",
+    url: "/co12.jpg",
+  },
+];
+interface Events {
+  title: string;
+  article: string;
+  url: string;
+}
+const events: Events[] = [
+  {
+    title: "Product Launches",
+    article: "Discover innovative products and enjoy exclusive previews at our exciting launch events.",
+    url: "/co14.jpg",
+  },
+  {
+    title: "Hackathon",
+    article: "Join us for a fast-paced hackathon where you can build creative solutions in just 48 hours.",
+    url: "/co13.jpg",
+  },
+  {
+    title: "Networking",
+    article: "Connect with industry leaders and like-minded professionals to open doors to new opportunities.",
+    url: "/ko13.jpg",
+  },
+  {
+    title: "Workshop",
+    article: "Sharpen your skills in hands-on sessions covering everything from coding to design.",
+    url: "/co15.jpg",
+  },
+  {
+    title: "Startup Pitch Night",
+    article: "Watch entrepreneurs pitch their ideas and get inspired by the next big thing in business.",
+    url: "/co17.webp",
+  },
+];
+
+
+export {
+  navLinks,
+  iconsHome,
+  conditionsHome,
+  articlessHome,
+  values,
+  packages,
+  services,
+  events,
+};

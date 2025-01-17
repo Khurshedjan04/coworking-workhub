@@ -24,15 +24,14 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  
   return (
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <div className="max-w-screen-2xl w-full mx-auto min-h-screen flex flex-col justify-between pb-8">
-          {/* <div data-aos="fade-down"> */}
-            <Navigation />
-          {/* </div> */}
+          <Navigation />
           {children}
           <Footer />
         </div>
