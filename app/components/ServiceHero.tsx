@@ -1,4 +1,4 @@
-'use client';
+import Image from "next/image";
 const ServiceHero = () => {
   return (
     <div
@@ -27,10 +27,14 @@ const ServiceHero = () => {
             Discoer Our Services
           </a>
         </div>
-        <img
+        <Image
           src="/logoDark.png"
           alt="WorkHub Logo"
           className="absolute bottom-4 right-4 w-48 md:w-60"
+          layout="intrinsic"
+          width={192}
+          height={60}
+        
         />
       </div>
     </div>

@@ -1,4 +1,5 @@
 import { articlessHome } from "../constants";
+import Image from "next/image";
 
 const HomeArticle = () => {
   return (
@@ -17,13 +18,19 @@ const HomeArticle = () => {
                 index % 2 === 1 ? "md:flex-row-reverse" : ""
               } items-center justify-center space-y-4 md:space-y-0 md:space-x-4`}
             >
-              <div data-aos="fade-up" className="w-full md:w-[32rem] h-[22rem]">
-                <img
+              <div
+                data-aos="fade-up"
+                className="w-full md:w-[32rem] h-[22rem] relative"
+              >
+                <Image
                   src={item.url}
                   alt={item.title}
-                  className="rounded-[1.25rem] w-full h-full shadow-lg"
+                  className="rounded-[1.25rem] shadow-lg"
+                  layout="fill"
+                  objectFit="cover"
                 />
               </div>
+
               <div
                 data-aos="fade-up"
                 data-aos-delay="200"

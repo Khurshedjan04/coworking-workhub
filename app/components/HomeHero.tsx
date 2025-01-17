@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const HeroSection = () => {
     return (
       <div
@@ -41,10 +43,14 @@ const HeroSection = () => {
               </button>
             </form>
           </div>
-          <img
+          <Image
             src="/logoDark.png"
             alt="WorkHub Logo"
             className="absolute bottom-4 right-4 w-48 md:w-60"
+            layout="intrinsic"
+            width={192}
+            height={60}
+          
           />
         </div>
       </div>
