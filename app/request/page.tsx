@@ -4,7 +4,6 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 import AOS from "aos";
 import Form from "../components/Form";
-import NavContact from "../components/NavContact";
 import Link from "next/link";
 
 export default function Home() {

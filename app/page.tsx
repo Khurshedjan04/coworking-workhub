@@ -8,7 +8,6 @@ import HomeOffer from "./components/HomeOffer";
 import HomeArticle from "./components/HomeArticle";
 import Packages from "./components/Packages";
 import Form from "./components/Form";
-import { useRouter } from "next/router";
 import Navigation from "./Navigation";
 
 export default function Home() {
