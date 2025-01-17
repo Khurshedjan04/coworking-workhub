@@ -19,7 +19,7 @@ export default function Home() {
     <NavContact/>
     <div className="w-full lg:h-screen flex items-center justify-center px-16 py-16 gap-12">
       <div className="lg:h-fit w-full flex lg:flex-row flex-col items-center justify-center">
-        <div data-aos="fade-up" className="lg:w-6/12 w-11/12  p-12 lg:mx-auto rounded-lg">
+        <div data-aos="fade-up" className="lg:w-6/12 w-full py-12 px-1 lg:p-12 lg:mx-auto rounded-lg">
           <Form
             title1="Let Us Contact You"
             subtitle1="Our consultants give you tailored Solution"
@@ -35,7 +35,7 @@ export default function Home() {
           />
         </div>
 
-        <div className="lg:w-6/12 w-11/12  p-12 lg:mx-auto rounded-lg">
+        <div className="lg:w-6/12 w-full p-12 px-1 lg:p-12 lg:mx-auto rounded-lg">
           <h2
             data-aos="fade-up"
             className="text-4xl text-center font-bold mb-8 text-cosumDarkBlue"
