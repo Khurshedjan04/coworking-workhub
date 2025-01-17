@@ -58,7 +58,7 @@ const EventsMain = () => {
                 key={index}
                 className="[perspective:1000px] group m-4"
               >
-                <div className="relative w-[25rem] h-[35rem] lg:w-[22rem] lg:h-[28rem]  [transform-style:preserve-3d] transition-transform duration-500 group-hover:[transform:rotateY(180deg)] ">
+                <div className="relative w-[25rem] h-[35rem] lg:w-[22rem] lg:h-[28rem] 2xl:w-[20rem] 2xl:h-[28rem] [transform-style:preserve-3d] transition-transform duration-500 group-hover:[transform:rotateY(180deg)] ">
                   {/* front of the card */}
                   <div
                     className="absolute w-full h-full [backface-visibility:hidden] flex justify-center items-center bg-no-repeat bg-cover bg-center text-white px-6 rounded-[1.25rem]"

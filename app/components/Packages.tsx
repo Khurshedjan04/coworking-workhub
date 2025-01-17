@@ -5,7 +5,7 @@ const Packages = () => {
   return (
     <div className="py-16 bg-[#010018] flex flex-col items-center justify-center text-white">
       <h1 data-aos="fade-up" className="text-4xl font-bold mb-8">Membership Packages</h1>
-      <div className="grid sm:grid-rows-2 grid-rows-4 sm:grid-cols-2 grid-cols-1  2xl:flex min-w-1/5 justify-center">
+      <div className="grid sm:grid-rows-2 grid-rows-4 sm:grid-cols-2 grid-cols-1 ">
         {packages.map((item, index) => (
           // Flipping Card
           <div

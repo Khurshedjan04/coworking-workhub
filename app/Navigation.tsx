@@ -28,7 +28,7 @@ const Navigation = () => {
     <div
       className={` ${
         scrolled ? "text-cosumDarkBlue" : "text-white"
-      } w-full h-20 z-10 fixed top-0 `}
+      } w-full max-w-screen-2xl h-20 z-10 fixed top-0 `}
       data-aos="fade-down"
     >
       <div className="block md:hidden text-5xl absolute top-3 right-6">
