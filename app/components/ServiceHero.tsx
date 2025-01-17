@@ -28,7 +28,7 @@ const ServiceHero = () => {
           </a>
         </div>
         <Image
-          src="/logoDark.png"
+          src="/logoDark.webp"
           alt="WorkHub Logo"
           className="absolute bottom-4 right-4 w-48 md:w-60"
           layout="intrinsic"

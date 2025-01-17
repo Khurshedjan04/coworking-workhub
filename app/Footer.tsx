@@ -33,7 +33,7 @@ const Footer = () => {
         <Link href="/">
           <Image
             className="w-44 h-fit"
-            src="/logo.png"
+            src="/logoDark.webp"
             alt="Company Logo"
             layout="intrinsic"
             width={196}

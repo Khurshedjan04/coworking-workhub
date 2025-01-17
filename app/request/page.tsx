@@ -16,7 +16,7 @@ export default function Home() {
 
   return (
     <>
-      <div className="w-full lg:h-screen flex items-center justify-center px-16 py-16 gap-12">
+      <div data-aos="fade-down" className="w-full lg:h-screen flex items-center justify-center px-16 py-16 gap-12">
         <div className="lg:h-fit w-full flex lg:flex-row flex-col items-center justify-center">
           <div className="lg:w-6/12 w-11/12  p-12 lg:mx-auto rounded-lg relative">
             <div className="absolute top-12 right-8 cursor-pointer">

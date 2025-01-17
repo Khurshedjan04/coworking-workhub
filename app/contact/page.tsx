@@ -19,7 +19,7 @@ export default function Home() {
     <NavContact/>
     <div className="w-full lg:h-screen flex items-center justify-center px-16 py-16 gap-12">
       <div className="lg:h-fit w-full flex lg:flex-row flex-col items-center justify-center">
-        <div className="lg:w-6/12 w-11/12  p-12 lg:mx-auto rounded-lg">
+        <div data-aos="fade-up" className="lg:w-6/12 w-11/12  p-12 lg:mx-auto rounded-lg">
           <Form
             title1="Let Us Contact You"
             subtitle1="Our consultants give you tailored Solution"
@@ -42,7 +42,10 @@ export default function Home() {
           >
             Visit Us
           </h2>
+          <div data-aos="fade-up" data-aos-delay="100">
+
           <Map />
+          </div>
           <div className="mt-4 text-center">
             <p className="text-lg font-semibold">
               Sergeli 6, Tashkent, Uzbekistan
