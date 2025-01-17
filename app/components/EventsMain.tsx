@@ -43,7 +43,7 @@ const EventsMain = () => {
         data-aos="fade-up"
         className="text-4xl text-center font-bold mb-8 text-white"
       >
-        Let's Enjoy
+        Let&apos;s Enjoy
       </h2>
 
       <div className="relative overflow-hidden">
