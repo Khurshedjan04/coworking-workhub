@@ -8,6 +8,11 @@ import Image from "next/image";
 
 const Navigation = () => {
   const [scrolled, setScrolled] = useState(false);
+  const [mobileMenu, setMobileMenu] = useState(false);
+
+  const toggleMobileMenu = () => {
+    setMobileMenu(!mobileMenu);
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -31,7 +36,9 @@ const Navigation = () => {
       } w-full max--w-2xl h-20 z-10 fixed top-0 `}
       data-aos="fade-down"
     >
-      <div className="block md:hidden text-5xl absolute top-3 right-6">
+      <div className={` block md:hidden text-5xl top-3 right-6 fixed z-50 transition-all duration-300 ${mobileMenu ? "text-cosumDarkBlue" : ""}`}
+      onClick={toggleMobileMenu}
+      >
         <MenuIcon fontSize="inherit" />
       </div>
       <div
@@ -49,11 +56,11 @@ const Navigation = () => {
               height={60}
             />
           </Link>
-          <div className="flex flex-col items-center sm:flex-row gap-8 font-bold">
+          <div className={` transition-all duration-300 md:transition-none bg-white fixed w-screen h-screen   flex-col flex justify-center md:flex-row md:bg-transparent md:static md:w-fit md:h-fit items-center sm:flex-row gap-8 font-bold ${mobileMenu ? "top-0 left-0 text-cosumDarkBlue " : "top-0 left-full"} `}>
             {navLinks.map((link, key) => (
               <div
                 key={key}
-                className="mb-3 hidden md:flex group relative w-fit"
+                className="mb-3 group relative w-fit"
               >
                 <div
                   className={` relative before:content-[''] before:transition-all before:absolute before:-bottom-1 before:h-0.5 before:w-0 before:bg-cosumDarkBlue hover:before:w-1/2 before:left-1/2 after:content-[''] after:transition-all after:absolute after:-bottom-1 after:h-0.5 after:w-0 after:bg-cosumDarkBlue hover:after:w-1/2 after:right-1/2 
@@ -61,7 +68,7 @@ const Navigation = () => {
                 `}
                 >
                   <Link href={link.link}>
-                    <h1 className="text-2xl lg:text-lg sm:text-2xl">
+                    <h1 className="text-3xl lg:text-lg sm:text-2xl">
                       {link.title}
                     </h1>
                   </Link>
