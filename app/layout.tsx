@@ -15,9 +15,42 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "WorkHub Central",
-  description: "Developed By Xurshed",
+  description: "Find Your Perfect Office Here",
   icons: {
     icon: "/svg.webp",
+  },
+  keywords: [
+    "Cooworking",
+    "Coo-working",
+    "Cooworking space",
+    "Coo-working space",
+    "WorkHub Central",
+    "WorkHub",
+    "Central",
+    "Office",
+    "Virtual Meeting Room",
+    "Meeting Room",
+    "Private Office",
+    "Peacefull Space",
+    "Networking Space",
+    "Hackathon"
+  ],
+  openGraph: {
+    title: "Xurshed's Portfolio",
+    description:
+      "Explore a collection of web development projects showcasing skills in React, JavaScript, and modern front-end technologies.",
+    url: "https://my-portfolio-v2--seven.vercel.app",
+    siteName: "Xurshed's Portfolio",
+    images: [
+      {
+        url: "/logo.svg",
+        width: 1200,
+        height: 630,
+        alt: "Portfolio Thumbnail",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
   },
 };
 

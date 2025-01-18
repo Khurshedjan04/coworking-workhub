@@ -42,10 +42,13 @@ const Footer = () => {
         </Link>
       </div>
       <div className="flex gap-8 ">
-        <a href="https://www.instagram.com/xurshed_alimmamadov/">
+        <a href="https://www.instagram.com/xurshed_alimmamadov/"
+        aria-label="Find Us in Instagram">
           <InstagramIcon fontSize="large" />
+          
         </a>
-        <a href="https://www.instagram.com/xurshed_alimmamadov/">
+        <a href="https://www.instagram.com/xurshed_alimmamadov/"
+        aria-label="Find Us in Telegram">
           <TelegramIcon fontSize="large" />
         </a>
       </div>

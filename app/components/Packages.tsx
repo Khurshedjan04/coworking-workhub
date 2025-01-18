@@ -17,7 +17,7 @@ const Packages = () => {
               {/* front of the card */}
               <div className="absolute w-full h-full [backface-visibility:hidden] flex justify-center items-center bg-white text-cosumDarkBlue px-6 rounded-[1.25rem]">
                 <div className="py-4 text-center">
-                  <h3 className="text-3xl font-bold mb-6">{item.title}</h3>
+                  <h2 className="text-3xl font-bold mb-6">{item.title}</h2>
                   <div className="flex flex-col gap-4">
                     {packages[index].article.map((article, index) => (
                       <span key={index} className="border-b">{article}</span>
