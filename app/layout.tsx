@@ -67,7 +67,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <div className="max-w-screen-2xl w-full mx-auto min-h-screen flex flex-col justify-between pb-8 relative">
+        <div className="max-w-[1920px] w-full mx-auto min-h-screen flex flex-col justify-between pb-8 relative">
           
           {children}
           <Footer />
