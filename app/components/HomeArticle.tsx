@@ -6,7 +6,7 @@ const HomeArticle = () => {
     <div className="px-[4.9rem] bg-white ">
       <div className="container mx-auto space-y-16">
         {articlessHome.map((item, index) => (
-          <div key={index} className=" flex flex-col items-center gap-5">
+          <div key={index} className=" flex flex-col items-center gap-5 group">
             <h3
               data-aos="fade-up"
               className="text-4xl text-center font-bold mb-8 text-cosumDarkBlue"
@@ -20,12 +20,12 @@ const HomeArticle = () => {
             >
               <div
                 data-aos="fade-up"
-                className="w-full md:w-[32rem] h-[22rem] relative"
+                className="w-full md:w-[32rem] h-[22rem] rounded-[1.25rem] shadow-lg relative overflow-hidden"
               >
                 <Image
                   src={item.url}
                   alt={item.title}
-                  className="rounded-[1.25rem] shadow-lg"
+                  className="group-hover:scale-105 duration-300"
                   layout="fill"
                   objectFit="cover"
                 />

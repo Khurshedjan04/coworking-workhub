@@ -1,4 +1,5 @@
 "use client";
+
 import CloseIcon from "@mui/icons-material/Close";
 import "aos/dist/aos.css";
 import { useEffect } from "react";

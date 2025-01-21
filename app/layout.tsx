@@ -36,11 +36,11 @@ export const metadata: Metadata = {
     "Hackathon"
   ],
   openGraph: {
-    title: "Xurshed's Portfolio",
+    title: "A project by Xurshed",
     description:
-      "Explore a collection of web development projects showcasing skills in React, JavaScript, and modern front-end technologies.",
+      "The project has been done for educational purpose only. Please don't use it for commercial purposes.",
     url: "https://my-portfolio-v2--seven.vercel.app",
-    siteName: "Xurshed's Portfolio",
+    siteName: "WorkHub Central",
     images: [
       {
         url: "/logo.svg",
@@ -67,7 +67,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <div className="max-w-[1920px] w-full mx-auto min-h-screen flex flex-col justify-between pb-8 relative">
+        <div className="max-w-[1920px] w-full mx-auto min-h-screen flex flex-col justify-between  pb-8 relative">
           
           {children}
           <Footer />

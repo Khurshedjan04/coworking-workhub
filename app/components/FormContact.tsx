@@ -1,5 +1,3 @@
-import React from "react";
-
 interface Field {
   label: string;
   placeholder: string;

@@ -17,16 +17,20 @@ const HomeOffer = () => {
           {iconsHome.map((item, index) => (
             <div
               key={index}
-              className="text-center "
-              data-aos="fade-up"
-              data-aos-delay={index * 100}
+              className="hover:scale-105 duration-300 hover:shadow-xl hover:-translate-y-2 hover:translate-x-1 w-36 rounded-md"
             >
-              <img
-                src={item.url}
-                alt={item.title}
-                className="w-[5.6rem] h-[5.6rem] mx-auto mb-4"
-              />
-              <h3 className="font-medium">{item.title}</h3>
+              <div
+                className="text-center "
+                data-aos="fade-up"
+                data-aos-delay={index * 100}
+              >
+                <img
+                  src={item.url}
+                  alt={item.title}
+                  className="w-[5.6rem] h-[5.6rem] mx-auto mb-4"
+                />
+                <h3 className="font-medium">{item.title}</h3>
+              </div>
             </div>
           ))}
         </div>
