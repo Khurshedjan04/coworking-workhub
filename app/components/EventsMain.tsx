@@ -2,7 +2,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import { events } from "../constants";
-import SimpleButton from "./SimpleButton";
+import PopUp from "./PopUp";
+import { useState } from "react";
 
 const EventsMain = () => {
   const sliderSettings = {
@@ -30,6 +31,14 @@ const EventsMain = () => {
         },
       },
     ],
+  };
+
+  const [openMore, setOpenMore] = useState(true);
+  const [selectedEvent, setSelectedEvent] = useState(events[0]);
+
+  const handleClick = (item: (typeof events)[0]) => {
+    setSelectedEvent(item);
+    setOpenMore(!openMore);
   };
 
   return (
@@ -85,13 +94,25 @@ const EventsMain = () => {
                       <h3 className="text-xl font-bold mb-16">
                         {item.article}
                       </h3>
-                      <SimpleButton text="Participate" link="/request" />
+                      <button
+                        onClick={() => handleClick(item)}
+                        className="bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded focus:outline-none font-bold w-fit"
+                      >
+                        Participate
+                      </button>
                     </div>
                   </div>
                 </div>
               </div>
             ))}
           </Slider>
+          <PopUp
+            title={`We will contact you shortly regarding`}
+            subtitle={` the ${selectedEvent.title} event.`}
+            desc="Please leave your contact information and any comments or questions you may have. "
+            state={openMore}
+            close={() => setOpenMore(true)}
+          />
         </div>
       </div>
     </div>

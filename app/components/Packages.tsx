@@ -57,7 +57,7 @@ const Packages = () => {
                     onClick={() => handleClick(item)}
                     className="bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded focus:outline-none font-bold w-fit"
                   >
-                    Join Now
+                    Request Call
                   </button>
                 </div>
               </div>
@@ -65,7 +65,9 @@ const Packages = () => {
           </div>
         ))}
         <PopUp
-          title={`You chose "${selectedItem.title}" package`}
+          title={`Great choice, you have chosen `}
+          subtitle={`${selectedItem.title} package`}
+          desc="Let us contact you for more info"
           state={openMore}
           close={() => setOpenMore(true)}
         />

@@ -2,10 +2,14 @@ import CloseIcon from "@mui/icons-material/Close";
 
 const PopUp = ({
   title,
+  subtitle,
+  desc,
   state,
   close,
 }: {
   title: string;
+  subtitle:string;
+  desc:string;
   state: boolean;
   close: () => void;
 }) => {
@@ -23,8 +27,10 @@ const PopUp = ({
         }  `}
       >
         <div className=" flex flex-col items-center gap-5 group px-16">
-          <h3 className="text-4xl text-center font-bold mb-8 text-cosumDarkBlue w-full relative">
+          <h3 className="text-4xl flex flex-col text-center font-bold mb-8 text-cosumDarkBlue w-full relative">
             <span>{title}</span>
+            <span>{subtitle}</span>
+            <span className="text-2xl sm:text-xl xl:text-base mt-2 font-semibold">{desc}</span>
             <span
               onClick={close}
               className="font-bold text-cosumDarkBlue absolute -top-12 right-0"
@@ -44,6 +50,7 @@ const PopUp = ({
                 type="text"
                 id="name"
                 placeholder="What is your name?"
+                required
                 className="w-full p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
             </div>
@@ -58,6 +65,7 @@ const PopUp = ({
                 type="text"
                 id="number"
                 placeholder="Your number..."
+                required
                 className="w-full p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
             </div>

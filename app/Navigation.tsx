@@ -17,12 +17,13 @@ const Navigation = () => {
   };
 
   const handleClick = (e: MouseEvent) => {
-    const target = e.target as HTMLElement; 
+    const target = e.target as HTMLElement;
     if (target.innerHTML === "Contact") {
       setInContact(true);
     } else {
       setInContact(false);
     }
+    toggleMobileMenu();
   };
 
   const handleScroll = () => {
@@ -49,7 +50,7 @@ const Navigation = () => {
     >
       <div
         className={` block md:hidden text-5xl top-3 right-6 fixed z-50 transition-all duration-300 text-white ${
-          mobileMenu ? "!text-cosumDarkBlue" : ""
+          mobileMenu || scrolled || inContact ? "!text-cosumDarkBlue" : ""
         }`}
         onClick={toggleMobileMenu}
       >

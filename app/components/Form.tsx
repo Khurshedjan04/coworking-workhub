@@ -33,6 +33,7 @@ const Form = ({
               type="text"
               id="name"
               placeholder="What is your name?"
+              required
               className="w-full p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
           </div>
@@ -47,6 +48,7 @@ const Form = ({
               type="text"
               id="number"
               placeholder="Your number..."
+              required
               className="w-full p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
           </div>

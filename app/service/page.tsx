@@ -14,6 +14,7 @@ export default function Home() {
       once: false,
     });
   }, []);
+
   return (
     <div className="w-full h-full flex flex-col gap-24">
       <ServiceHero />
