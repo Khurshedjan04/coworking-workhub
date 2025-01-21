@@ -31,8 +31,8 @@ const HeroSection = () => {
               <input
                 type="text"
                 id="phone-number"
-                placeholder="Enter your phone number"
-                className="px-4 py-2 text-gray-800 rounded-md w-full md:w-auto"
+                placeholder="Enter your number"
+                className="px-4 py-2 text-gray-800 rounded-md w-full md:w-fit"
                 required
               />
               <button

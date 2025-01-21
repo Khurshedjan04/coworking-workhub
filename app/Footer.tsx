@@ -1,4 +1,5 @@
 "use client";
+
 import Link from "next/link";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import TelegramIcon from "@mui/icons-material/Telegram";
@@ -44,13 +45,13 @@ const Footer = () => {
         </Link>
       </div>
       <div className="flex gap-8 ">
-        <a href="https://www.instagram.com/xurshed_alimmamadov/"
-        aria-label="Find Us in Instagram">
+        <a href="https://www.instagram.com/khurshedjan_12.06/"
+        aria-label="Find Us in Instagram" target="_blank">
           <InstagramIcon fontSize="large" />
           
         </a>
-        <a href="https://www.instagram.com/xurshed_alimmamadov/"
-        aria-label="Find Us in Telegram">
+        <a href="https://t.me/Khurshedjan12_06"
+        aria-label="Find Us in Telegram" target="_blank">
           <TelegramIcon fontSize="large" />
         </a>
       </div>
