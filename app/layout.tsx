@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     siteName: "WorkHub Central",
     images: [
       {
-        url: "/logo.svg",
+        url: "/svg.webp",
         width: 1200,
         height: 630,
         alt: "Portfolio Thumbnail",
