@@ -21,7 +21,7 @@ const ServiceMore = ({
       } `}
     >
       <div
-        className={` transition-all duration-500 left-[50%] -translate-x-[50%] container mx-auto space-y-16 fixed bg-white w-11/12 xl:w-8/12 opacity-0 py-20 rounded-[1.25rem] ${
+        className={` transition-all duration-700 left-[50%] -translate-x-[50%] container mx-auto space-y-16 fixed bg-white w-11/12 xl:w-8/12 opacity-0 py-20 rounded-[1.25rem] ${
           state ? "-top-[50%]" : "top-[50%] -translate-y-[50%] opacity-100 pointer-events-auto"
         }  `}
       >
@@ -45,6 +45,7 @@ const ServiceMore = ({
                 alt={title}
                 layout="fill"
                 objectFit="cover"
+                className="transition-all duration-500"
               />
             </div>
 
