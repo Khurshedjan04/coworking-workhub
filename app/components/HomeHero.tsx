@@ -22,7 +22,7 @@ const HeroSection = () => {
           >
             <span>Request Free Consultation:</span>
             <form
-              action="/submit-form" 
+              action="/" 
               className="flex flex-col md:flex-row gap-4"
             >
               <label htmlFor="phone-number" className="sr-only">

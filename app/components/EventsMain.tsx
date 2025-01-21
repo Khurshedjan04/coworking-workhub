@@ -8,7 +8,7 @@ const EventsMain = () => {
   const sliderSettings = {
     dots: false,
     infinite: true,
-    speed: 500,
+    speed: 1000,
     slidesToShow: 3,
     slidesToScroll: 1,
     centerMode: true,
@@ -85,7 +85,7 @@ const EventsMain = () => {
                       <h3 className="text-xl font-bold mb-16">
                         {item.article}
                       </h3>
-                      <SimpleButton text="Participate" link="/" />
+                      <SimpleButton text="Participate" link="/request" />
                     </div>
                   </div>
                 </div>
