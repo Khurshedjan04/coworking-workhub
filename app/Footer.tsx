@@ -26,7 +26,7 @@ const Footer = () => {
         </div>
         <div className="flex flex-col">
           <h1 className="font-bold text-base">Phone Number:</h1>
-          <h2 className="font-bold text-3xl">+998 12 345-67-89</h2>
+          <h2 className="font-bold text-3xl">+998 90 452 49 46</h2>
         </div>
         <h2 className="text-base">Xurshed Alimmamadov © 2025</h2>
         <h2 className="text-base">This project has been developed for educational purposes only</h2>
