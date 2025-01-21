@@ -23,7 +23,7 @@ const Navigation = () => {
     } else {
       setInContact(false);
     }
-    toggleMobileMenu();
+    if (mobileMenu) toggleMobileMenu();
   };
 
   const handleScroll = () => {
