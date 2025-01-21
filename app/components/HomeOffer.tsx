@@ -13,7 +13,7 @@ const HomeOffer = () => {
         >
           We Offer
         </h2>
-        <div className="xl:flex justify-between grid grid-rows-3 grid-cols-2 md:grid-cols-3 md:grid-rows-2 w-full">
+        <div className="xl:flex justify-between grid grid-rows-3 grid-cols-2 md:grid-cols-3 md:grid-rows-2 w-full place-items-center">
           {iconsHome.map((item, index) => (
             <div
               key={index}

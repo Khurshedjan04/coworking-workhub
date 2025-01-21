@@ -23,6 +23,7 @@ const Navigation = () => {
         setScrolled(false);
       }
     };
+
     window.addEventListener("scroll", handleScroll);
 
     return () => {
