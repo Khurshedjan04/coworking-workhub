@@ -10,6 +10,7 @@ import Image from "next/image";
 const Navigation = () => {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenu, setMobileMenu] = useState(false);
+  const [inContact, setInContact] = useState(false);
 
   const toggleMobileMenu = () => {
     setMobileMenu(!mobileMenu);
@@ -17,12 +18,14 @@ const Navigation = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 100 || document.documentElement.scrollTop >  100) {
+      if (window.scrollY > 100 || document.body.scrollTop > 100|| document.querySelector("#contact") != null) {
         setScrolled(true);
       } else {
         setScrolled(false);
       }
     };
+
+    handleScroll();
 
     window.addEventListener("scroll", handleScroll);
 
@@ -30,18 +33,15 @@ const Navigation = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-  
 
   return (
     <div
-      className={` ${
-        scrolled ? "text-cosumDarkBlue" : "text-white"
-      } w-full max-w-[1920px] h-20 z-10 fixed top-0 `}
+      className={` w-full max-w-[1920px] h-20 z-10 fixed top-0 `}
       data-aos="fade-down"
     >
       <div
-        className={` block md:hidden text-5xl top-3 right-6 fixed z-50 transition-all duration-300 ${
-          mobileMenu ? "text-cosumDarkBlue" : ""
+        className={` block md:hidden text-5xl top-3 right-6 fixed z-50 transition-all duration-300 text-white ${
+          mobileMenu ? "!text-cosumDarkBlue" : ""
         }`}
         onClick={toggleMobileMenu}
       >
