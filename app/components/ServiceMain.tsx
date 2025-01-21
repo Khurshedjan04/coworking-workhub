@@ -1,10 +1,21 @@
+import { useState } from "react";
 import { services } from "../constants";
-import SimpleButton from "./SimpleButton";
+import ServiceMore from "./ServiceMore";
 
 const ServicesMain: React.FC = () => {
+  const [openMore, setOpenMore] = useState(false);
+  const [selectedService, setSelectedService] = useState(services[0]);
+
+  const handleClick = (service: (typeof services)[0]) => {
+    setSelectedService(service);
+    setOpenMore(!openMore);
+    console.log(service);
+  };
+
   return (
-    <div id="services"  className=" bg-white">
-      <h2 id="services" 
+    <div id="services" className=" bg-white">
+      <h2
+        id="services"
         data-aos="fade-up"
         className="text-4xl text-center font-bold mb-8 text-cosumDarkBlue"
       >
@@ -18,6 +29,7 @@ const ServicesMain: React.FC = () => {
             key={index}
             className=" [perspective:1000px] group m-4"
           >
+            {" "}
             <div className="relative w-[15rem] h-[20rem] [transform-style:preserve-3d] transition-transform duration-500 group-hover:[transform:rotateY(180deg)]">
               <div
                 key={index}
@@ -34,12 +46,24 @@ const ServicesMain: React.FC = () => {
                   <h3 className="text-2xl md:text-xl lg:text-lg font-bold mb-10">
                     {service.article}
                   </h3>
-                  <SimpleButton text="Read More" link="/" />
+                  <button
+                    onClick={() => handleClick(service)}
+                    className="bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded focus:outline-none font-bold w-fit"
+                  >
+                    Read More
+                  </button>
                 </div>
               </div>
             </div>
           </div>
         ))}
+        <ServiceMore
+          title={selectedService.title}
+          url={selectedService.url}
+          subArticle={selectedService.subarticle}
+          state={openMore}
+          close={() => setOpenMore(true)}
+        />
       </div>
     </div>
   );

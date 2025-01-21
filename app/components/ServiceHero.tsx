@@ -21,7 +21,6 @@ const ServiceHero = () => {
         >
           <a
             href="#services"
-            type="submit"
             className=" p-2 bg-blue-500 text-white font-bold rounded-lg w-fit hover:bg-blue-700"
           >
             Discoer Our Services
