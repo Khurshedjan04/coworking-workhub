@@ -6,7 +6,6 @@ import AOS from "aos";
 import Form from "../components/Form";
 import ServiceMain from "../components/ServiceMain";
 import ServiceHero from "../components/ServiceHero";
-import Navigation from "../Navigation";
 
 export default function Home() {
   useEffect(() => {
@@ -16,19 +15,17 @@ export default function Home() {
     });
   }, []);
   return (
-    <>
-    <Navigation />
-
     <div className="w-full h-full flex flex-col gap-24">
       <ServiceHero />
       <ServiceMain />
-      <Form
-        title1="Ready to Join Us?"
-        title2=""
-        subtitle1=""
-        subtitle2="Anything we should know before calling?"
-      />
+      <div data-aos="fade-up">
+        <Form
+          title1="Ready to Join Us?"
+          title2=""
+          subtitle1=""
+          subtitle2="Anything we should know before calling?"
+        />
+      </div>
     </div>
-    </>
   );
 }

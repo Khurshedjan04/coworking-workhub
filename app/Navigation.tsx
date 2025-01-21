@@ -16,17 +16,24 @@ const Navigation = () => {
     setMobileMenu(!mobileMenu);
   };
 
+  const handleClick = (e: any) => {
+    if (e.target.innerHTML == "Contact") {
+      setInContact(true);
+    } else {
+      setInContact(false);
+    }
+  };
+
+  const handleScroll = () => {
+    if (window.scrollY > 100 || document.body.scrollTop > 100) {
+      setScrolled(true);
+    } else {
+      setScrolled(false);
+    }
+  };
+
   useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 100 || document.body.scrollTop > 100|| document.querySelector("#contact") != null) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
-    };
-
     handleScroll();
-
     window.addEventListener("scroll", handleScroll);
 
     return () => {
@@ -49,14 +56,14 @@ const Navigation = () => {
       </div>
       <div
         className={` transition-all duration-300 w-full h-full px-8  flex justify-between items-center text-lg sm:px-[4.9rem] text-white ${
-          scrolled ? "bg-white !text-cosumDarkBlue shadow-md " : ""
+          scrolled || inContact ? "bg-white !text-cosumDarkBlue shadow-md " : ""
         } `}
       >
         <div className="w-fit flex gap-8 items-center">
           <Link href="/">
             <Image
               className="transition-all w-44 h-fit"
-              src={`${scrolled ? "/logoDark.webp" : "/logo.webp"}`}
+              src={`${scrolled || inContact ? "/logoDark.webp" : "/logo.webp"}`}
               alt="Company Logo"
               width={192}
               height={60}
@@ -77,7 +84,10 @@ const Navigation = () => {
                 `}
                 >
                   <Link href={link.link}>
-                    <h1 className="text-3xl lg:text-lg sm:text-2xl">
+                    <h1
+                      onClick={(e) => handleClick(e)}
+                      className="text-3xl lg:text-lg sm:text-2xl"
+                    >
                       {link.title}
                     </h1>
                   </Link>

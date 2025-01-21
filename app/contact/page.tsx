@@ -5,20 +5,18 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 import AOS from "aos";
 import Form from "../components/FormContact";
-import NavContact from "../components/NavContact";
+
 
 export default function Home() {
   useEffect(() => {
     AOS.init({
       duration: 1000,
-      once: true,
+      once: false,
     });
   }, []);
 
   return (
-    <>
-      <NavContact />
-      <div className="w-full lg:h-screen flex items-center justify-center px-16 py-16 gap-12">
+      <div id="contact" className="w-full lg:h-screen flex items-center justify-center px-16 py-16 gap-12">
         <div className="lg:h-fit w-full flex lg:flex-row flex-col items-center justify-center">
           <div
             data-aos="fade-up"
@@ -57,6 +55,5 @@ export default function Home() {
           </div>
         </div>
       </div>
-    </>
   );
 }

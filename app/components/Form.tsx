@@ -10,7 +10,7 @@ const Form = ({
   subtitle2: string;
 }) => {
   return (
-    <div className="  py-12 text-cosumDarkBlue">
+    <div className="py-12 text-cosumDarkBlue">
       <div className=" px-8 py-12 mx-auto sm:p-0 max-w-md">
         <h2 className="text-4xl text-center font-bold mb-2 text-cosumDarkBlue">
           {title1}

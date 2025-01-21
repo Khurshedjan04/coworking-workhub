@@ -8,7 +8,6 @@ import HomeOffer from "./components/HomeOffer";
 import HomeArticle from "./components/HomeArticle";
 import Packages from "./components/Packages";
 import Form from "./components/Form";
-import Navigation from "./Navigation";
 
 export default function Home() {
   useEffect(() => {
@@ -18,22 +17,19 @@ export default function Home() {
     });
   }, []);
   return (
-    <>
-      <Navigation />
-      <div className="w-full h-full flex flex-col gap-24">
-        <HeroSection />
-        <HomeOffer />
-        <HomeArticle />
-        <Packages />
-        <div data-aos="fade-up">
-          <Form
-            title1="Unique Needs?"
-            title2="We Have Tailored Solution!"
-            subtitle1="Custom plans are available for clients who request tailored solutions for unique needs"
-            subtitle2="Anything we should know before calling?"
-          />
-        </div>
+    <div className="w-full h-full flex flex-col gap-24">
+      <HeroSection />
+      <HomeOffer />
+      <HomeArticle />
+      <Packages />
+      <div data-aos="fade-up">
+        <Form
+          title1="Unique Needs?"
+          title2="We Have Tailored Solution!"
+          subtitle1="Custom plans are available for clients who request tailored solutions for unique needs"
+          subtitle2="Anything we should know before calling?"
+        />
       </div>
-    </>
+    </div>
   );
 }
