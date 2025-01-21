@@ -3,13 +3,12 @@ import { services } from "../constants";
 import ServiceMore from "./ServiceMore";
 
 const ServicesMain: React.FC = () => {
-  const [openMore, setOpenMore] = useState(false);
+  const [openMore, setOpenMore] = useState(true);
   const [selectedService, setSelectedService] = useState(services[0]);
 
   const handleClick = (service: (typeof services)[0]) => {
     setSelectedService(service);
     setOpenMore(!openMore);
-    console.log(service);
   };
 
   return (
