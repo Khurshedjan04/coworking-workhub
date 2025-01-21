@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { packages } from "../constants";
 import PopUp from "./PopUp";
-import SimpleButton from "./SimpleButton";
 
 const Packages = () => {
   const [openMore, setOpenMore] = useState(true);
