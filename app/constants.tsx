@@ -204,7 +204,7 @@ const services: Services[] = [
     url: "/co8.webp",
   },
   {
-    title: "High Speed Wi-Fi",
+    title: "High-Speed Wi-Fi",
     article: "Blazing-fast Wi-Fi to keep you connected always.",
     url: "/co9.webp",
   },
