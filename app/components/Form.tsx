@@ -12,16 +12,16 @@ const Form = ({
   return (
     <div className="  py-12 text-cosumDarkBlue">
       <div className=" px-8 py-12 mx-auto sm:p-0 max-w-md">
-        <h2 data-aos="fade-up"  className="text-4xl text-center font-bold mb-2 text-cosumDarkBlue">
+        <h2 className="text-4xl text-center font-bold mb-2 text-cosumDarkBlue">
           {title1}
         </h2>
-        <h3 data-aos="fade-up"  className="text-4xl text-center font-bold mb-4">
+        <h3 className="text-4xl text-center font-bold mb-4">
           {title2}
         </h3>
-        <p data-aos="fade-up" className="text-center text-cosumDarkBlue mb-6">
+        <p className="text-center text-cosumDarkBlue mb-6">
        {subtitle1}
         </p>
-        <form data-aos="fade-up" className="space-y-4">
+        <form className="space-y-4">
           <div>
             <label
               className="block text-cosumDarkBlue font-bold mb-1"

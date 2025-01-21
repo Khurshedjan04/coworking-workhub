@@ -25,12 +25,14 @@ export default function Home() {
         <HomeOffer />
         <HomeArticle />
         <Packages />
-        <Form
-          title1="Unique Needs?"
-          title2="We Have Tailored Solution!"
-          subtitle1="Custom plans are available for clients who request tailored solutions for unique needs"
-          subtitle2="Anything we should know before calling?"
-        />
+        <div data-aos="fade-up">
+          <Form
+            title1="Unique Needs?"
+            title2="We Have Tailored Solution!"
+            subtitle1="Custom plans are available for clients who request tailored solutions for unique needs"
+            subtitle2="Anything we should know before calling?"
+          />
+        </div>
       </div>
     </>
   );

@@ -28,6 +28,8 @@ const Footer = () => {
           <h2 className="font-bold text-3xl">+998 12 345-67-89</h2>
         </div>
         <h2 className="text-base">Xurshed Alimmamadov © 2025</h2>
+        <h2 className="text-base">This project has been developed for educational purposes only</h2>
+        <h2 className="text-base">If you want to use it for commercial purposes, please contact the owner</h2>
       </div>
       <div className="absolute hidden md:block left-1/2 -translate-x-1/2 bottom-1/2 translate-y-1/2">
         <Link href="/">
