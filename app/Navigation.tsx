@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, MouseEvent } from "react";
 import Link from "next/link";
 import SimpleButton from "./components/SimpleButton";
 import { navLinks } from "./constants";
@@ -16,8 +16,9 @@ const Navigation = () => {
     setMobileMenu(!mobileMenu);
   };
 
-  const handleClick = (e: any) => {
-    if (e.target.innerHTML == "Contact") {
+  const handleClick = (e: MouseEvent) => {
+    const target = e.target as HTMLElement; 
+    if (target.innerHTML === "Contact") {
       setInContact(true);
     } else {
       setInContact(false);
